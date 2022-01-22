@@ -1,7 +1,7 @@
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: app-access
+  name: app-application-cicd-access
   namespace: aaa-application-cicd
 subjects:
   - kind: ServiceAccount
@@ -14,7 +14,7 @@ roleRef:
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: app-access
+  name: app-application-prod-access
   namespace: aaa-application-prod
 subjects:
   - kind: ServiceAccount
@@ -27,7 +27,7 @@ roleRef:
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: app-access
+  name: app-application-stage-access
   namespace: aaa-application-stage
 subjects:
   - kind: ServiceAccount
@@ -40,7 +40,7 @@ roleRef:
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: app-access
+  name: app-application-test-access
   namespace: aaa-application-test
 subjects:
   - kind: ServiceAccount
