@@ -3,21 +3,21 @@ kind: Namespace
 metadata:
   name: aaa-application-prod
   labels:
-    argocd.argoproj.io/managed-by: spider-cicd
+    argocd.argoproj.io/managed-by: aaa-aplication-cicd
 ---
 apiVersion: v1
 kind: Namespace
 metadata:
   name: aaa-application-stage
   labels:
-    argocd.argoproj.io/managed-by: spider-cicd
+    argocd.argoproj.io/managed-by: aaa-aplication-cicd
 ---
 apiVersion: v1
 kind: Namespace
 metadata:
   name: aaa-application-test
   labels:
-    argocd.argoproj.io/managed-by: spider-cicd
+    argocd.argoproj.io/managed-by: aaa-aplication-cicd
 ---
 apiVersion: v1
 kind: Namespace
