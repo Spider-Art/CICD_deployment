@@ -30,7 +30,7 @@ subjects:
   apiVersion: rbac.authorization.k8s.io/v1
   metadata:
     name: aaa-application-test-image-pull
-    namespace: aaa-application-test
+    namespace: aaa-application-pipeline
   roleRef:
     apiGroup: rbac.authorization.k8s.io
     kind: ClusterRole
@@ -38,4 +38,4 @@ subjects:
   subjects:
   - kind: ServiceAccount
     name: default
-    namespace: aaa-application-pipeline
+    namespace: aaa-application-test
