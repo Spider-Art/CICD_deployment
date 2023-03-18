@@ -10,7 +10,7 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: default
-  namespace: aaatest
+  namespace: aaa-application-pipeline
 ---
   kind: RoleBinding
   apiVersion: rbac.authorization.k8s.io/v1
@@ -24,13 +24,13 @@ subjects:
   subjects:
   - kind: ServiceAccount
     name: default
-    namespace: aaatest
+    namespace: aaa-application-pipeline
 ---
   kind: RoleBinding
   apiVersion: rbac.authorization.k8s.io/v1
   metadata:
     name: aaa-application-test-image-pull
-    namespace: aaa-application-pipeline
+    namespace: aaa-application-test
   roleRef:
     apiGroup: rbac.authorization.k8s.io
     kind: ClusterRole
@@ -38,4 +38,4 @@ subjects:
   subjects:
   - kind: ServiceAccount
     name: default
-    namespace: aaa-application-test
+    namespace: aaa-application-pipeline
